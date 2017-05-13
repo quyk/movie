@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout1">
+    <TableLayout
+        android:background="@android:color/white"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1">
+        <TableRow
+            android:id="@+id/tableRow1">
+            <EditText
+                android:layout_column="0"
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_weight="4"
+                android:textColor="@android:color/black"
+                android:hint="@string/SearchHint"
+                android:textColorHint="@android:color/darker_gray"
+                android:singleLine="true" />
+            <Button
+                android:text="@string/SearchButton"
+                android:layout_column="1"
+                android:id="@+id/btnSearch"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/lvwMovies" />
+    <TextView
+        android:id="@+id/txv_none"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/MessageNone"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+    <include
+        android:visibility="gone"
+        android:id="@+id/ProgressBar"
+        layout="@layout/ProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>

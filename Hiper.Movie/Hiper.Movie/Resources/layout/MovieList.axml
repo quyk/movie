@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgPoster"
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:id="@+id/txvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgPoster"
+        android:lineSpacingExtra="3dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#ffffff"
+        android:text="Filme"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/txvYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvTitle"
+        android:layout_toRightOf="@id/imgPoster"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:textColor="#fff"
+        android:text="2017"
+        android:textSize="14sp" />
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ApplicationName">Hiper Movie</string>
+    <string name="MessageNone">Nenhum registro encontrado!</string>
+    <string name="SearchHint">Digite o nome do filme!</string>
+    <string name="SearchButton">Pesquisar</string>
+    <string name="SearchAlert">Digite no mínimo 2 caracteres!</string>
+</resources>
